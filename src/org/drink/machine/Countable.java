@@ -2,10 +2,8 @@ package org.drink.machine;
 
 public interface Countable {
 
-     int getCount();
+    int getCount();
 
-    void decreaseCount() ;
+    void decreaseCount();
 
-
-
-    }
+}

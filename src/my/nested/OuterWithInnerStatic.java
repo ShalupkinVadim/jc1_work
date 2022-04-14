@@ -2,7 +2,7 @@ package my.nested;
 
 public class OuterWithInnerStatic {
 
-    static class  InnerStatic{
+    static class InnerStatic {
 
     }
 

@@ -2,7 +2,7 @@ package my.nested;
 
 public class OuterWithAnonimInner {
 
-    public void buildAnonimInner(){
+    public void buildAnonimInner() {
         getSomeInterface(new SomeInterface() {
             @Override
             public void doSomething() {
@@ -10,12 +10,15 @@ public class OuterWithAnonimInner {
             }
         });
     }
-    public void buildAnotherAnonimInner(){
-        getSomeInterface(() -> System.out.println("Another inner class implementation #2"));
-    }
-    private void  getSomeInterface(SomeInterface someInterface){
-        someInterface.doSomething();
 
+    public void buildAnotherAnonimInner() {
+        getSomeInterface(() ->
+                System.out.println("Another inner class implementation #2")
+        );
+    }
+
+    private void getSomeInterface(SomeInterface someInterface) {
+        someInterface.doSomething();
     }
 
     public static void main(String[] args) {
@@ -24,9 +27,8 @@ public class OuterWithAnonimInner {
     }
 
 }
-interface SomeInterface{
+
+interface SomeInterface {
     void doSomething();
-
-
 }
 

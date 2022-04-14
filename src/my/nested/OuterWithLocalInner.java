@@ -2,10 +2,10 @@ package my.nested;
 
 public class OuterWithLocalInner {
 
-    public void buildLocalInner(){
+    public void buildLocalInner() {
 
-        class  LocalInner{
-            public LocalInner(){
+        class LocalInner {
+            public LocalInner() {
                 System.out.println("Hello from LocalInner");
             }
         }
