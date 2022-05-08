@@ -10,7 +10,7 @@ public class UserCounter extends Thread {
                 userCounter.setName("userCounterThread" + i++);
                 userCounter.start();
             }
-            Thread.sleep(10_000);
+            Thread.sleep(5_000);
             System.out.println("User count: " + Counter.getCounter().getUserCount());
         } catch (Exception e) {
             e.printStackTrace();
